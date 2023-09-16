@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_container1">
+        <h1>Descuentos 20%</h1>
+      </div>
+
+      <div class="header_container2">
+        <h1>Nombre Tienda</h1>
+      </div>
+
+      <div class="header_container3">
+        <nav>
+          <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="form_container">
+        <div class="form_text">
+          <h2>Añadí tu super!</h2>
+          <p>Agrega tu personaje favorito completando las opciones.</p>
+        </div>
+
+        <form action="/registro.php" method="POST">
+          <div class="left_form">
+            <label for="usuario">*Nombre</label>
+            <input type="text" name="usuario" id="usuario">
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" value="2021-07-22" min="2018-01-01" max="2022-12-31" id="fecha">
+
+            <textarea name="mensaje" id="mensaje">Contenido</textarea>
+          </div>
+
+          <div class="right_form">
+            <label for="especie">*Especie</label>
+            <select name="especie" id="especie">
+                <option value="default">Especie</option>
+                <option value="humano">Humano</option>
+                <option value="robot">Robot</option>
+                <option value="mutante">Mutante</option>
+                <option value="alien">Alienígena</option>
+            </select>
+
+            <label for="archivo">Agregar Foto</label>
+            <input type="file" name="avatar" accept=".jpg" multiple id="archivo"> 
+
+            <fieldset>
+              <label>Poderes</label><br>
+              <input type="checkbox" id="volar" name="poderes" value="Volar">
+              <label for="volar">Volar</label><br>
+              <input type="checkbox" id="superinteligencia" name="poderes" value="Superinteligencia">
+              <label for="volar">Superinteligencia</label><br>
+              <input type="checkbox" id="rayolaser" name="poderes" value="Vista de rayo láser">
+              <label for="volar">Vista de rayo láser</label><br>
+              <input type="checkbox" id="billetera" name="poderes" value="Billetera gorda">
+              <label for="volar">Billetera gorda</label><br>
+            </fieldset>
+
+            <hr />
+            
+            <fieldset>
+              <label>Tipo de personaje</label><br>      
+              <input type="radio" id="heroe" name="personaje" value="Héroe / Heroina">
+              <label for="heroe">Héroe / Heroina</label><br>
+              <input type="radio" id="villano" name="personaje" value="Villano / Villana">
+              <label for="villano">Villano / Villana</label><br>
+            </fieldset>
+
+            
+            
+          </div>
+
+          
+        </form>
+        <button class="agree" type="submit">Añadir</button> 
+      </div>
+            
+
+        
+    </main>
+
+  </body>
+
+  <footer>
+    <p>Todos los derechos reservados a FRONT END 1</p>
+  </footer>
+</html>
